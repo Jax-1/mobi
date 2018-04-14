@@ -1,4 +1,4 @@
-package com.lava.lavafaq.service.impl;
+package com.mobi.service.impl;
 
 import java.security.NoSuchAlgorithmException;
 
@@ -10,11 +10,11 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import com.lava.lavafaq.bean.Person;
-import com.lava.lavafaq.canstants.Canstants;
 import com.lava.lavafaq.dao.PersonMapper;
-import com.lava.lavafaq.servic.IPersonService;
-import com.lava.lavafaq.utils.MailUtils;
+import com.mobi.bean.Person;
+import com.mobi.canstants.Canstants;
+import com.mobi.servic.IPersonService;
+import com.mobi.utils.MailUtils;
 
 
 @Service("personService")

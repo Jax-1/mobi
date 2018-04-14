@@ -1,6 +1,6 @@
 package com.lava.lavafaq.dao;
 
-import com.lava.lavafaq.bean.Faq;
+import com.mobi.bean.Faq;
 
 public interface FaqMapper {
     int deleteByPrimaryKey(Integer id);

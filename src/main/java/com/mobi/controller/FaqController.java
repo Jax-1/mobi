@@ -1,4 +1,4 @@
-package com.lava.lavafaq.controller;
+package com.mobi.controller;
 
 
 
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.lava.lavafaq.bean.Faq;
-import com.lava.lavafaq.servic.IFaqService;
-import com.lava.lavafaq.utils.ResponseUtils;
+import com.mobi.bean.Faq;
+import com.mobi.servic.IFaqService;
+import com.mobi.utils.ResponseUtils;
 
 @Controller  
 @RequestMapping("/faq")

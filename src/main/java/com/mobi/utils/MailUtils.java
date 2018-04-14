@@ -1,4 +1,4 @@
-package com.lava.lavafaq.utils;
+package com.mobi.utils;
 
 import java.security.GeneralSecurityException;
 import java.security.NoSuchAlgorithmException;
@@ -15,7 +15,8 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import org.apache.log4j.Logger;
-import com.lava.lavafaq.bean.Person;
+
+import com.mobi.bean.Person;
 import com.sun.mail.util.MailSSLSocketFactory;
 
 

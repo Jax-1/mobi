@@ -1,4 +1,4 @@
-package com.lava.lavafaq.springmvc;
+package com.mobi.springmvc;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

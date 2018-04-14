@@ -1,4 +1,4 @@
-package com.lava.lavafaq.canstants;
+package com.mobi.canstants;
 
 public class Canstants {
 	

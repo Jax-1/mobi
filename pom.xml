@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
    <build>  
-        <finalName>lavaFAQ</finalName>  
+        <finalName>mobi</finalName>  
         <plugins>  
 
         <plugin>         

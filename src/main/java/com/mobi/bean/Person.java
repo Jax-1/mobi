@@ -1,4 +1,4 @@
-package com.lava.lavafaq.bean;
+package com.mobi.bean;
 
 public class Person implements java.io.Serializable {
 	

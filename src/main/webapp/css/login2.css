@@ -2,10 +2,14 @@ html {
 	
 }
 body {
-	font-family:"Microsoft Yahei";
-	font-size:12px;
-	margin:0;
-background: #fff url(../images/login_bg.jpg) 50% 0 no-repeat;}
+	margin: 5px;
+    padding: 0;
+    background: url('../images/login_bg.jpg') no-repeat;
+    background-attachment:fixed;
+    -webkit-background-size: cover;
+	}
+	
+
 ul {
 	padding:0;
 	margin:0;

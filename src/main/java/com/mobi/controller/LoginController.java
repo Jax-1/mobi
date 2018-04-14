@@ -1,4 +1,4 @@
-package com.lava.lavafaq.controller;
+package com.mobi.controller;
 
 import java.util.Map;
 
@@ -13,10 +13,10 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.lava.lavafaq.bean.Person;
-import com.lava.lavafaq.canstants.Canstants;
-import com.lava.lavafaq.servic.IPersonService;
-import com.lava.lavafaq.utils.ResponseUtils;
+import com.mobi.bean.Person;
+import com.mobi.canstants.Canstants;
+import com.mobi.servic.IPersonService;
+import com.mobi.utils.ResponseUtils;
 
 
 

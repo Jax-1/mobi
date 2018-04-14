@@ -1,4 +1,4 @@
-package com.mobi.been;
+package com.mobi.bean;
 
 import java.util.Date;
 

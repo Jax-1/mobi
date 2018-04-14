@@ -1,6 +1,6 @@
 package com.lava.lavafaq.dao;
 
-import com.lava.lavafaq.bean.Person;
+import com.mobi.bean.Person;
 
 
 public interface PersonMapper {

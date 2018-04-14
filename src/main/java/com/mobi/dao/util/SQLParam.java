@@ -20,7 +20,6 @@ import javax.management.RuntimeErrorException;
  *
  */
 public class SQLParam {
-	//����Oracle��Ӧjava����
 	private static final String STRING_TYPE="STRING";
 	private static final String BIGDECIMAL_TYPE="BIGDECTMAL";
 	private static final String BYTE_TYPE="BYTE";

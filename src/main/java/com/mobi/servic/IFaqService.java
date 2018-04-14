@@ -1,6 +1,6 @@
-package com.lava.lavafaq.servic;
+package com.mobi.servic;
 
-import com.lava.lavafaq.bean.Faq;
+import com.mobi.bean.Faq;
 
 public interface IFaqService {
 	

@@ -1,8 +1,8 @@
-package com.lava.lavafaq.servic;
+package com.mobi.servic;
 
 import javax.servlet.http.HttpSession;
 
-import com.lava.lavafaq.bean.Person;
+import com.mobi.bean.Person;
 
 
 public interface IPersonService {

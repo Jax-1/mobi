@@ -1,4 +1,4 @@
-package com.lava.lavafaq.utils;
+package com.mobi.utils;
 
 import java.util.UUID;
 

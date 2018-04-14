@@ -1,14 +1,14 @@
-package com.lava.lavafaq.service.impl;
+package com.mobi.service.impl;
 
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lava.lavafaq.bean.Faq;
-import com.lava.lavafaq.canstants.Canstants;
 import com.lava.lavafaq.dao.FaqMapper;
-import com.lava.lavafaq.servic.IFaqService;
+import com.mobi.bean.Faq;
+import com.mobi.canstants.Canstants;
+import com.mobi.servic.IFaqService;
 
 @Service("faqService")
 public class FaqServiceImpl implements IFaqService {

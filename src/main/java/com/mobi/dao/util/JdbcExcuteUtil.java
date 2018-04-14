@@ -17,7 +17,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.lava.lavafaq.service.impl.PersonServiceImpl;
+import com.mobi.service.impl.PersonServiceImpl;
 import com.mobi.util.Validate;
 
 public class JdbcExcuteUtil {
@@ -95,8 +95,8 @@ public class JdbcExcuteUtil {
       
       /**
        * @Description: 按preparedStatement 方式查询
-       * @author       LXD
-       * @Create at:   Nov 23, 20158:13:52 PM
+       * @author       ZHANG
+       * @Create 
        * @Modified by:
        */
       @SuppressWarnings("unchecked")
