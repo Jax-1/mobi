@@ -10,9 +10,9 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import com.lava.lavafaq.dao.PersonMapper;
 import com.mobi.bean.Person;
 import com.mobi.canstants.Canstants;
+import com.mobi.dao.PersonMapper;
 import com.mobi.servic.IPersonService;
 import com.mobi.utils.MailUtils;
 

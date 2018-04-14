@@ -1,4 +1,4 @@
-package com.lava.lavafaq.dao;
+package com.mobi.dao;
 
 import com.mobi.bean.Person;
 

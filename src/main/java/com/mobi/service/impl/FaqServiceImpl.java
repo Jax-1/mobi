@@ -5,9 +5,9 @@ package com.mobi.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lava.lavafaq.dao.FaqMapper;
 import com.mobi.bean.Faq;
 import com.mobi.canstants.Canstants;
+import com.mobi.dao.FaqMapper;
 import com.mobi.servic.IFaqService;
 
 @Service("faqService")

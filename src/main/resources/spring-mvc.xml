@@ -13,7 +13,7 @@
     
     
 	<!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-	<context:component-scan base-package="com.lava.lavafaq.controller" />
+	<context:component-scan base-package="com.mobi.controller" />
 		
      
 	<!--避免IE执行AJAX时，返回JSON出现下载文件 -->
@@ -80,7 +80,7 @@
     <bean id="conversionService3" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">    
          <property name="converters">    
              <list>    
-                 <bean class="com.lava.lavafaq.springmvc.DateConverter" />    
+                 <bean class="com.mobi.springmvc.DateConverter" />    
              </list>    
          </property>    
      </bean>  
@@ -89,7 +89,7 @@
     <mvc:interceptors>
     <mvc:interceptor>
         <mvc:mapping path="/login/**" />
-        <bean class="com.lava.lavafaq.springmvc.LoginInterceptor">
+        <bean class="com.mobi.springmvc.LoginInterceptor">
          <property name="excludeUrls">
                 <list>
                    <value>/login/loginHtml</value>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.lava.lavafaq.dao.FaqMapper" >
-  <resultMap id="BaseResultMap" type="com.lava.lavafaq.bean.Faq" >
+<mapper namespace="com.mobi.dao.FaqMapper" >
+  <resultMap id="BaseResultMap" type="com.mobi.bean.Faq" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="mail" property="mail" jdbcType="VARCHAR" />
@@ -28,7 +28,7 @@
     delete from faq
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.lava.lavafaq.bean.Faq" >
+  <insert id="insert" parameterType="com.mobi.bean.Faq" >
     insert into faq (id, username, mail, 
       category1, category2, bugid, 
       platform, phenomenon, editormd, 
@@ -38,7 +38,7 @@
       #{platform,jdbcType=VARCHAR}, #{phenomenon,jdbcType=VARCHAR}, #{editormd,jdbcType=LONGVARCHAR}, 
       #{editorhtml,jdbcType=LONGVARCHAR}, #{datetime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.lava.lavafaq.bean.Faq" >
+  <insert id="insertSelective" parameterType="com.mobi.bean.Faq" >
     insert into faq
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -111,7 +111,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.lava.lavafaq.bean.Faq" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.mobi.bean.Faq" >
     update faq
     <set >
       <if test="username != null" >
@@ -147,7 +147,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.lava.lavafaq.bean.Faq" >
+  <update id="updateByPrimaryKey" parameterType="com.mobi.bean.Faq" >
     update faq
     set username = #{username,jdbcType=VARCHAR},
       mail = #{mail,jdbcType=VARCHAR},
