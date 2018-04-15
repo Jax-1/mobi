@@ -5,7 +5,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.mobi.login.bean.UserAuthsBean;
-import com.mobi.login.dao.UserAuthsMapper;
+import com.mobi.login.servic.LoginManagerServic;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -17,15 +17,23 @@ import org.apache.log4j.Logger;
 public class LoginController {
 	
 	private static Logger logger = Logger.getLogger(LoginController.class); 
-//	@Resource
-	//private UserAuthsMapper userAuthsMapper;
+	@Resource
+	private LoginManagerServic loginManager;
 	//登录请求
 	@RequestMapping("/login")
 	private String login(UserAuthsBean userauths,ModelMap modelMap,HttpSession httpSession) {
-		System.out.println(userauths.getIdentifier()+"    "+userauths.getCredential());
-//		String passwordByUserName = this.userAuthsMapper.getPasswordByUserName(userauths.getIdentifier());
-//		System.out.println("psd"+passwordByUserName);
+		boolean checkLoginInfo = this.loginManager.checkLoginInfo(userauths, httpSession);
+		if(checkLoginInfo) {
+			//跳转到主页面
+			return "login";
+		}
+		
 		return "redirect:/login/loginHtml";
+		
+	}
+	@RequestMapping("/loginHtml")
+	private String loginHtml() {
+		return "login";
 		
 	}
 }

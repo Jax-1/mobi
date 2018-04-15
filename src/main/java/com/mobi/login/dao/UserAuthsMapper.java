@@ -1,6 +1,5 @@
 package com.mobi.login.dao;
 
 public interface UserAuthsMapper {
-	String getPasswordByUserName(String username);
-
+	public String getPwdByUserName(String identifier);
 }

@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>    
-<!DOCTYPE mapper    
-  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">    
-<mapper namespace="com.mobi.login.dao.UserAuthsMapper">    
-  <select id="findEmployeeById" resultType="com.mobi.login.bean.UserAuthsBean">    
-    select * from t_sys_user_auths where id = #{abc} <!-- 后面发现这个参数名这里填什么都无所谓，能映射到 -->  
-  </select>    
-</mapper>  
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.mobi.login.dao.UserAuthsMapper">
+    <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
+
+    <select id="getPwdByUserName" resultType="java.lang.String">
+        select credential from t_sys_user_auths where identifier=#{identifier}
+    </select>
+   
+</mapper>
