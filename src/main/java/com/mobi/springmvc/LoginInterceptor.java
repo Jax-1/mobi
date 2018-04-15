@@ -15,6 +15,7 @@ import org.springframework.web.util.UrlPathHelper;
 public class LoginInterceptor implements HandlerInterceptor {
 
 	private static Logger logger = Logger.getLogger(LoginInterceptor.class); 
+	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
 		// TODO Auto-generated method stub
@@ -36,6 +37,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 		
 	}
 
+	@Override
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
@@ -43,6 +45,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 		
 	}
 
+	@Override
 	public void afterCompletion(HttpServletRequest request,
 			HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
@@ -52,11 +55,11 @@ public class LoginInterceptor implements HandlerInterceptor {
 	
 	
 	/**
-	 * 获得第三个路径分隔符的位置
+	 * 获得第三个路径分隔符的位�?
 	 * 
 	 * @param request
 	 * @throws IllegalStateException
-	 *             访问路径错误，没有三(四)个'/'
+	 *             访问路径错误，没有三(�?)�?'/'
 	 *    http://localhost:8080/lavaFAQ/login/loginHtml       
 	 *    getURI=/login/loginHtml uri=/lavaFAQ/login/loginHtml ctxPath=/lavaFAQ
 	 */

@@ -17,7 +17,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.mobi.service.impl.PersonServiceImpl;
 import com.mobi.util.Validate;
 
 public class JdbcExcuteUtil {

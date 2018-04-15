@@ -16,7 +16,7 @@ public class DateConverter implements Converter<String, Date> {
 	public static final DateFormat DF_YEAR = new SimpleDateFormat("yyyy");
 	public static final DateFormat DF_MONTH = new SimpleDateFormat("yyyy-MM");
 	/**
-	 * 短类型日期长度
+	 * 短类型日期长�?
 	 */
 	public static final int SHORT_DATE = 10;
 
@@ -24,6 +24,7 @@ public class DateConverter implements Converter<String, Date> {
 
 	public static final int MONTH_DATE = 7;
 
+	@Override
 	public Date convert(String text) {
 		text = text.trim();
 		if (!StringUtils.hasText(text)) {
