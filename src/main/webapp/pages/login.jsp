@@ -49,14 +49,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <label class="input-tips" for="u">帐号：</label>
                 <div class="inputOuter" id="uArea">
                     
-                    <input type="text" id="u" name="mail" class="inputstyle"/>
+                    <input type="text" id="u" name="identifier" class="inputstyle"/>
                 </div>
                 </div>
                 <div class="pwdArea" id="pwdArea">
                <label class="input-tips" for="p">密码：</label> 
                <div class="inputOuter" id="pArea">
                     
-                    <input type="password" id="p" name="password" class="inputstyle"/>
+                    <input type="password" id="p" name="credential" class="inputstyle"/>
                 </div>
                 </div>
                

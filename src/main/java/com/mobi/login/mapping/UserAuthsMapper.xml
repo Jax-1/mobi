@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper    
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">    
+<mapper namespace="com.mobi.login.dao.UserAuthsMapper">    
+  <select id="findEmployeeById" resultType="com.mobi.login.bean.UserAuthsBean">    
+    select * from t_sys_user_auths where id = #{abc} <!-- 后面发现这个参数名这里填什么都无所谓，能映射到 -->  
+  </select>    
+</mapper>  
