@@ -63,6 +63,10 @@
     <mvc:resources mapping="/script/**" location="/script/" />        
     <mvc:resources mapping="/css/**" location="/css/" />  
     <mvc:resources mapping="/images/**" location="/images/" /> 
+    <mvc:resources mapping="/pages/js/**" location="/pages/js/" />        
+    <mvc:resources mapping="/pages/css/**" location="/pages/css/" />  
+    <mvc:resources mapping="/pages/img/**" location="/pages/img/" /> 
+    <mvc:resources mapping="/pages/img/portfolio/**" location="/pages/img/portfolio/" /> 
     
 	
 	<!-- 国际化配置 -->

@@ -3,13 +3,15 @@ package com.mobi.login.servic.impl;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.stereotype.Service;
+
 import com.mobi.login.bean.UserAuthsBean;
 import com.mobi.login.dao.UserAuthsMapper;
 import com.mobi.login.servic.LoginManagerServic;
 import com.mobi.util.Validate;
 
 
-
+@Service("LoginManagerServic")
 public class LoginManagerServicImpl implements LoginManagerServic {
 	
 	@Resource

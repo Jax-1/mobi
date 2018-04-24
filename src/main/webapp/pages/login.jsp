@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 </head>
 <body>
-<h1>Mobi Blog<sup>@zhangJ</sup></h1>
+<h1>Mobi Portal<sup>@zhangJ</sup></h1>
 
 <div class="login" style="margin-top:50px;">
     
